@@ -13,7 +13,7 @@ app.use((req, res , next) => {
 
 app.get("/date", (req, res, next)=>{
     let date = new Date();
-    let dateString = date.getFullYear() + "/" + (date.getMonth()+1) + "/" + date.getDay();
+    let dateString = date.getFullYear() + "/" + (date.getMonth()+1) + "/" + date.getDate();
     let time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
      res.json({dateString,time});
   
